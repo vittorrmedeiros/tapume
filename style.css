@@ -1,6 +1,7 @@
 @import url('./fonts/font-awesome/css/font-awesome.min.css');
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -13,6 +14,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1em;
     background-color: #252525;
 }
 
@@ -33,6 +35,10 @@
 .bonfire {
     height: 10em;
     width: 6em;
+}
+
+.main-title {
+    font-size: 32px;
 }
 
 .caixa__local, .caixa__contato, .caixa__redes {
@@ -62,4 +68,10 @@ i {
 
 i:hover {
     color: #d3c6c6;
+}
+
+@media screen and (max-width: 767px) {
+    .main-title {
+        font-size: 24px;
+    }
 }
